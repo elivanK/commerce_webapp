@@ -1,11 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an ongoing project from a course I am taking at the moment to imporve my Ruby and Ruby on Rials skills.
+It's an eCommerce Website with PostgreSQL Database.
 
-Things you may want to cover:
+[On Heroku](https://bikesberlincom.herokuapp.com/)
 
-* Ruby version
+It covers:
+
+* Ruby version 
 
 * System dependencies
 
