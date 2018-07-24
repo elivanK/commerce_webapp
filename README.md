@@ -24,3 +24,5 @@ It covers:
 * Deployment instructions
 
 * ...
+
+![Screenshot](https://github.com/elivanK/commerce_webapp/blob/master/app/assets/images/screenshotec.jpg)
