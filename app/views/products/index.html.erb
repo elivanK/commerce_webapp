@@ -8,7 +8,7 @@
       <th>Name</th>
       <th>Description</th>
       <th>Image url</th>
-      <th>Colour</th>
+      <th>Color</th>
       <th>price</th>
       <th colspan="3"></th>
     </tr>
@@ -22,7 +22,7 @@
             <%= image_tag("racebike.jpg", class: "img-fluid") %>
             <a href= "#"><h5><%= product.name %></h5></a>     
             <p>Description: <%= product.description %></p>
-            <p>Color: <%= product.colour %></p>
+            <p>Color: <%= product.color %></p>
             <p>Price: $ <%= product.price %></p>
             <div><%= link_to 'Show', product %></div>
             <div><%= link_to 'Edit', edit_product_path(product) %></div>
