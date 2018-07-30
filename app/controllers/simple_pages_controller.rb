@@ -10,7 +10,7 @@ class SimplePagesController < ApplicationController
   # and set it to a variable called @featured_product
   # that we'll reference within the view - the page in no longer static.
   def landing_page
-    @featured_product = Product.first
+    @products = Product.limit(3)
   end
 
 end
