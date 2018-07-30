@@ -5,10 +5,10 @@
         <%= image_tag "racebike.jpg", class: "img-fluid"%>
   <% end %>
   <a href= "#"><h5><%= product.name %></h5></a>     
-  <p>Description: <%= product.description %></p>
-  <p>Color: <%= product.color %></p>
-  <p>Price: $ <%= product.price %></p>
-  <div><%= link_to 'Show', product %></div>
-  <div><%= link_to 'Edit', edit_product_path(product) %></div>
-  <div><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></div>
-</div>
+    <p>Description: <%= product.description %></p>
+    <p>Color: <%= product.color %></p>
+    <p>Price: $ <%= product.price %></p>
+    <div><%= link_to 'Show', product %></div>
+    <div><%= link_to 'Edit', edit_product_path(product) %></div>
+    <div><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+  </div>
