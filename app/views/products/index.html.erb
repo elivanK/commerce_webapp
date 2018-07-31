@@ -3,11 +3,11 @@
 <h1>Listing Products</h1>
   <div class="container-fluid">
     <div class="row row-relative">
-      <%= @products.each do |product| %>
-        <%= render product %>
-      <% end %>  
+      <% @products.each do |product| %>
+        <%= render partial: "product", locals: {product: product} %>
+      <% end %>
     </div>
-  </div> <!-- End of class container-fluid-->
+  </div> <!-- End of class container-fluid -->
   <br>
   <%= link_to 'New Product', new_product_path %>
 
