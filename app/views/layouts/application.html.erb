@@ -27,6 +27,11 @@
           <li class="nav-item"><%= link_to "Products", products_path %></li>
           <li class="nav-item"><%= link_to "Orders", orders_path %></li>
         </ul>
+        <%# The search form %>
+        <%= form_with(url: products_path, method: 'get', local: true) do |form| %>   
+          <%= form.text_field :q, id: 'q', value: params[:q], class: 'search-field' %>
+          <%= form.submit 'Search', class: 'btn btn-dark btn-sm' %>
+        <% end %>
     </nav>
 
    
