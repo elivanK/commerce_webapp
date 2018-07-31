@@ -2,7 +2,7 @@ class OrdersController < ApplicationController
     def index
         # To retrieve all the orders made by users so we can lay
         # them out to display
-        @orders = Order.incluedes(:product).all
+        @orders = Order.includes(:product).all
     end
 
     def show
