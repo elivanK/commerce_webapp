@@ -3,8 +3,13 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 h1 {
     font-family: Arial, Helvetica, sans-serif;
-    color: darkgreen;
+    color: green;
     text-align: center;
+}
+
+.contact {
+    font-family: Arial, Helvetica, sans-serif;
+    color: green;
 }
 
 // p {
@@ -66,5 +71,10 @@ h1.title {
 }
 
 .form-control {
-    width: 270px;
+    width: 100%;
+}
+
+.content {
+    max-width: 500px;
+    margin: auto;
 }

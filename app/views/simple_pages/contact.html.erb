@@ -1,2 +1,22 @@
-<h1 class="mt-5">Contact</h1>
-<p class="lead">You can contact us via email berlinbike@google.com</p>
+
+
+<%= flash[:notice] %>
+
+<%= form_with(url:"/simple_pages/thank_you", method: "post", local: true) do |form| %>
+<div class="container content">
+    <h2 class="contact">Contact</h2>
+    <div class="form-group">
+        <%= form.label :name %>
+        <%= form.text_field :name, class: "form-control", placeholder: "Enter Name" %>
+    </div>
+    <div class="form-group">
+        <%= form.label :email %>
+        <%= form.text_field :email, class: "form-control", placeholder: "Enter Email" %>
+    </div>
+    <div class="form-group">
+        <%= form.label :message %>
+        <%= form.text_area :message, class: "form-control", placeholder: "Enter Message", rows: 5 %>
+    </div>
+    <%= form.submit "Send", class: "btn btn-success" %>
+<% end %>
+</div>
