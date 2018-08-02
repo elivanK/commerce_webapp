@@ -13,27 +13,27 @@
   <div class="container content">
     <div class="form-group">
       <%= form.label :name %>
-      <%= form.text_field :name, class: "form-control" %>
+      <%= form.text_field :name, class: "form-control", required: true %>
     </div>
 
     <div class="form-group">
       <%= form.label :description %>
-      <%= form.text_area :description, class: "form-control" %>
+      <%= form.text_area :description, class: "form-control", required: true %>
     </div>
 
     <div class="form-group">
       <%= form.label :image_url %>
-      <%= form.text_field :image_url, class: "form-control" %>
+      <%= form.text_field :image_url, class: "form-control", required: true %>
     </div>
 
     <div class="form-group">
       <%= form.label :color %><br>
-      <%= form.text_field :color, class: "form-control" %>
+      <%= form.text_field :color, class: "form-control", required: true %>
     </div>
 
     <div class="form-group">
       <%= form.label :price %><br> 
-      <%= form.text_field :price, class: "form-control" %>
+      <%= form.text_field :price, class: "form-control", required: true %>
     </div>
 
     <div class="actions">

@@ -78,3 +78,8 @@ h1.title {
     max-width: 500px;
     margin: auto;
 }
+
+.carousel-item .img-fluid {
+    height: 500px;
+    object-fit: cover;
+}
