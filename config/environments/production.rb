@@ -78,7 +78,7 @@ Rails.application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
-
+  
   # Use a different logger for distributed setups.
   # require 'syslog/logger'
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
@@ -94,5 +94,5 @@ Rails.application.configure do
 
   # Any dynamic links that show up inside emails from your development environment 
   # generate the right URLs.
-  config.action_mailer.default_url_options = { host: 'bikesberlincom.herokuapp.com’ }
-end
+  config.action_mailer.default_url_options = { host: ‘bikesberlincom.herokuapp.com’ }
+end 
