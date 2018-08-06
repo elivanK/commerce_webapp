@@ -94,5 +94,5 @@ Rails.application.configure do
 
   # Any dynamic links that show up inside emails from your development environment 
   # generate the right URLs.
-  config.action_mailer.default_url_options = { host: ‘bikesberlincom.herokuapp.com’ }
+  # config.action_mailer.default_url_options = { host: ‘bikesberlincom.herokuapp.com’ }
 end 
