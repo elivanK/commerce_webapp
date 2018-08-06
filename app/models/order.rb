@@ -4,5 +4,6 @@ class Order < ApplicationRecord
     # called product_id that refernces the ID of the product in the order.
     # Each order can be assigned to one product.
     belongs_to :product
+    belongs_to :user
 end
 
