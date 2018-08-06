@@ -1,4 +1,5 @@
 class OrdersController < ApplicationController
+    before_action :authenticate_user!
     def index
         # To retrieve all the orders made by users so we can lay
         # them out to display
