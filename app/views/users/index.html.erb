@@ -2,28 +2,17 @@
 
 <h1>Users</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>First name</th>
-      <th>Last name</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
+<div class="container-fluid">
+  <div class="">
     <% @users.each do |user| %>
-      <tr>
-        <td><%= user.first_name %></td>
-        <td><%= user.last_name %></td>
-        <td><%= link_to 'Show', user %></td>
-        <td><%= link_to 'Edit', edit_user_path(user) %></td>
-        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+      <strong>First name:</strong><p><%= user.first_name %></p>
+      <strong>Last name:</strong><p><%= user.last_name %></p>
+      <p><%= link_to 'Show', user %></p>
+      <p><%= link_to 'Edit', edit_user_path(user) %></p>
+      <p><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+      <hr>
     <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New User', new_user_path %>
+  </div>  
+  <br>
+  <%= link_to 'New User', new_user_path %>
+</div>
