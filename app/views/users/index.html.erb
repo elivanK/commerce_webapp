@@ -1,17 +1,18 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Users</h1>
-
-<div class="container-fluid">
-  <div class="">
-    <% @users.each do |user| %>
-      <strong>First name:</strong><p><%= user.first_name %></p>
-      <strong>Last name:</strong><p><%= user.last_name %></p>
-      <p><%= link_to 'Show', user %></p>
-      <p><%= link_to 'Edit', edit_user_path(user) %></p>
-      <p><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></p>
-      <hr>
-    <% end %>
+  <div class="row row-relative">
+    <div class="col-sm-3 col-border">
+      <% @users.each do |user| %>
+        <strong>First name:</strong><p><%= user.first_name %></p>
+        <strong>Last name:</strong><p><%= user.last_name %></p>
+        <strong>Email:</strong><p><%= user.email %></p>
+        <p><%= link_to 'Show', user %></p>
+        <p><%= link_to 'Edit', edit_user_path(user) %></p>
+        <p><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+        <hr>
+      <% end %>
+    </div>
   </div>  
   <br>
   <%= link_to 'New User', new_user_path %>
