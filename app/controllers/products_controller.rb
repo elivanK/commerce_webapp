@@ -16,7 +16,8 @@ class ProductsController < ApplicationController
   # GET /products/1.json
   # Retrieve the comments to display 
   def show
-    @comments = @product.comments.order("created_at DESC")
+    @comments = @product.comments.order("created_at DESC").paginate(page: params[:page], per_page: 2)
+    # @comments = @product.comments.order("created_at DESC")
   end
 
   # GET /products/new
