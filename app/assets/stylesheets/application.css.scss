@@ -13,8 +13,11 @@
  *= require_tree .
  *= require_self
  *= require jquery.raty
+  
  */
 
+@import "font-awesome-sprockets";
+@import "font-awesome";
 .login-box {
     max-width: 330px;
     padding: 15px;
