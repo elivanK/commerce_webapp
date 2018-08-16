@@ -30,10 +30,10 @@ describe UsersController, type: :controller do
         end
         context 'when a first user that is logged in can NOT access the show page of the second user' do
             before(:each) do
-                sign_in user2
+                sign_in user1
             end
             it 'redirect to home' do
-                get :show, params: { id: user1.id }
+                get :show, params: { id: user2.id }
                 expect(response).to have_http_status(302)
                 expect(response).to redirect_to(root_path)
             end

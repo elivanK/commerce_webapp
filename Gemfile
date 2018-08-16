@@ -35,8 +35,8 @@ gem 'cancancan', '~> 1.10'
 gem 'font-awesome-sass', '~> 5.2.0'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
-# For functional test
 gem 'rails-controller-testing'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -45,6 +45,9 @@ end
 # Adding the RSpect test
 group :development, :test do
   gem 'rspec-rails', '~> 3.7'
+  # For functional test
+  
+  gem 'factory_bot_rails'
 end
 
 group :development do
@@ -68,5 +71,5 @@ end
 # Use sqlite3 as the database for Active Record
 # Declared inside a development test block 
 group :development, :test do
-  gem 'sqlite3'
+  gem 'sqlite3'  
 end  
