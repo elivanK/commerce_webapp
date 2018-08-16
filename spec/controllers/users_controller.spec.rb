@@ -34,7 +34,7 @@ describe UsersController, type: :controller do
         end
         context 'when a first user that is logged in can NOT access the show page of the second user' do
             before(:each) do
-                sign_in @user1
+                sign_in @user
             end 
             it 'redirect to home' do
                 get :show, params: { id: @user2.id }
