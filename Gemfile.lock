@@ -237,7 +237,7 @@ DEPENDENCIES
   cancancan (~> 1.10)
   coffee-rails (~> 4.2)
   devise
-  factory_bot_rails
+  factory_bot_rails (~> 4.0)
   font-awesome-sass (~> 5.2.0)
   jbuilder (~> 2.5)
   jquery-rails
