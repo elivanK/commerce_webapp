@@ -37,16 +37,13 @@ gem 'font-awesome-sass', '~> 5.2.0'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'rails-controller-testing'
 gem 'stripe'
-group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-end
 
 # Adding the RSpect test
 group :development, :test do
   gem 'rspec-rails', '~> 3.7'
-  # For functional test
-  
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  # For functional test  
   gem "factory_bot_rails", "~> 4.0"
 
 end

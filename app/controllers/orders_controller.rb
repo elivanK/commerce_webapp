@@ -5,7 +5,7 @@ class OrdersController < ApplicationController
         # them out to display
         @orders = Order.includes(:product).all
     end
-
+    byebug 
     def show
         @order = Order.find(params[:id])
     end
