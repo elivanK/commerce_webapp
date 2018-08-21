@@ -10,7 +10,7 @@
         <%= @product.description %>
       </p>
       <br>
-      <%= image_tag @product.image_url ,class: "img-fluid" %> 
+      <%= image_tag @product.image_url ,class: "img-zoom img-fluid", data_zoom_image: @product.image_url %> 
       <p>
         <strong>color:</strong>
         <%= @product.color %>

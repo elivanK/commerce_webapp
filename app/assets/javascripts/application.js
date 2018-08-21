@@ -11,6 +11,7 @@
 // about supported directives.
 //= require jquery3
 //= require rails-ujs
+//= require jquery.elevateZoom-3.0.8.min
 //= require activestorage
 //= require turbolinks
 //= require jquery.raty.js
