@@ -19,12 +19,7 @@ $(document).on('turbolinks:load', function() {
     refreshRating();
     
     $('.img-zoom').elevateZoom({
-        responsive: true,
-        zoomWindowWidth:500,
-        zoomWindowHeight:300,
-        zoomWindowFadeIn: 500,
-        zoomWindowFadeOut: 750,
-        scrollZoom: true,
-        zoomLevel: 1
+        zoomType: 'inner',
+        cursor: 'crosshair'
     });
 });
