@@ -1,19 +1,14 @@
-<% if notice %>
-    <p id="notice" class="alert alert-info"><%= notice %></p>
-<% end %>
-<% if alert %>
-    <p id="notice" class="alert alert-info"><%= alert %></p>
-<% end %>
-
+<div class="container-fluid">
 <h1>Listing Products</h1>
-  <div class="container-fluid">
-    <div class="row row-relative">
+  <div class="row row-relative">
+    <% cache (cache_key_for_products) do %>
       <% @products.each do |product| %>
-        <%= render partial: "product", locals: {product: product} %>
-      <% end %>
-    </div>
-  </div> <!-- End of class container-fluid -->
+        <%= render product %>
+      <% end %>  
+    <% end %>
+  </div>
   <br>
   <%= link_to 'New Product', new_product_path %>
+</div>  
 
 
