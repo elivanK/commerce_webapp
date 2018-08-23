@@ -33,6 +33,7 @@ gem 'devise'
 # gem 'capistrano-rails', group: :development
 gem 'cancancan', '~> 1.10'
 gem 'font-awesome-sass', '~> 5.2.0'
+gem 'dalli'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'rails-controller-testing'
