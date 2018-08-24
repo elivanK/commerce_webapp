@@ -30,6 +30,7 @@ gem 'will_paginate', '~> 3.1.0'
 # gem 'mini_magick', '~> 4.8'
 gem 'devise'
 gem 'redis'
+gem 'redis-rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'cancancan', '~> 1.10'
