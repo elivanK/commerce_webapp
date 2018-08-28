@@ -106,5 +106,5 @@ Rails.application.configure do
   # generate the right URLs.
    config.action_mailer.default_url_options = { host: "bikesberlincom.herokuapp.com" }
    config.web_socket_server_url = "wss://bikesberlincom.herokuapp.com/cable"
-   config.action_cable.allowed_request_origins = ['https://bikeberlincom.herokuapp.com', 'http://bikeberlincom.herokuapp.com']
+   config.action_cable.allowed_request_origins = ['https://bikesberlincom.herokuapp.com', 'http://bikesberlincom.herokuapp.com']
 end 
