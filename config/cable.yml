@@ -6,5 +6,5 @@ test:
 
 production:
   adapter: redis
-  url: redis://h:p34b3fc7a0436c240b1d7b93dc9fac26dc11af7d2a0e
+  url: redis://redistogo:4b7168f48dcc4604c4f6151d9dfbb990@spinyfin.redistogo.com:9779/
   channel_prefix: commerce_webapp_production
