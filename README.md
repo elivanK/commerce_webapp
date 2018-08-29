@@ -25,4 +25,4 @@ It covers:
 
 * RSpec tests
 
-![Screenshot](https://github.com/elivanK/commerce_webapp/blob/master/app/assets/images/screenshotec.jpg)
+![Screenshot](https://github.com/elivanK/commerce_webapp/blob/master/app/assets/images/screenshotec.png)
