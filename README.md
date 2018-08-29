@@ -1,13 +1,13 @@
 # README
 
-This is an ongoing project from a course I am taking at the moment to imporve my Ruby and Ruby on Rials skills.
-It's an eCommerce Website with PostgreSQL Database.
+This is a project to imporve my Ruby and Ruby on Rials skills.
+It's an eCommerce Website with PostgreSQL Database and Redis.
 
 [On Heroku](https://bikesberlincom.herokuapp.com/)
 
 It covers:
 
-* Ruby version 
+* Ruby version
 
 * System dependencies
 
