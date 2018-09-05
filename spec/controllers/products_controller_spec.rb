@@ -45,9 +45,9 @@ describe ProductsController, type: :controller do
           expect(response).to be_successful    
         end 
 
-        it "cannot create a new product" do
-            expect(Product.new(price:nil)).not_to be_valid
-        end 
+        # it "cannot create a new product" do
+        #     expect(Product.new(price:nil)).not_to be_valid
+        # end 
     end
 
    context "PUT #update" do

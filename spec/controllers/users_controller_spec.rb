@@ -37,7 +37,7 @@ describe UsersController, type: :controller do
                 sign_in @user
             end 
             it 'redirect to home' do
-                get :show, params: { id: @user2.id }
+                get :edit, params: { id: @user2.id }
                 expect(response).to have_http_status(302)
                 expect(response).to redirect_to(root_path)
             end

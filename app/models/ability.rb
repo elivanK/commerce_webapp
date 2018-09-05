@@ -9,8 +9,8 @@ class Ability
     else
       can :read, :all   
       can [:update, :destroy], User, id: user.id 
-      can :read, Comment, id: user.id
-      can :read, Product, id: user.id
+      # can :read, Comment, id: user.id
+      # can :read, Product, id: user.id
     end  
   end
 end

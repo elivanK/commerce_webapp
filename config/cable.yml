@@ -6,5 +6,5 @@ test:
 
 production:
   adapter: redis
-  url: redis://redistogo:4b7168f48dcc4604c4f6151d9dfbb990@spinyfin.redistogo.com:9779/
+  url: <%= ENV["REDIS_URL"] %>
   channel_prefix: commerce_webapp_production

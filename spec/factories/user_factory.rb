@@ -1,7 +1,7 @@
 # Tell rails that you are using FactoryBot to define factories
 FactoryBot.define do 
     # Create another factory for admin using sequence
-    sequence(:email) { |n| "user#{n}@example.com"}
+    sequence(:email) { |n| "test#{n}@example.com"}
     # Here we define the first factory
     factory :user do
         email 
